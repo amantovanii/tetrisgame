@@ -1,3 +1,13 @@
 # tetrisgame
 Jogo Tetris
 Jogo criado nas aulas de Programação Web do curso de Sistemas de Informação da UNICAMP.
+
+    Ao invés das peças "caírem" pelo tabuleiro, elas deverão surgir no centro da região inferior da tela e se deslocarem de forma ascendente, ou seja, deverão "subir" ao longo do tabuleiro (daí o nome Tetris in the Mirror). Consequentemente, as peças ficarão acumuladas na parte superior da tela, onde o jogador deverá completar as linhas para liberar espaço no tabuleiro.
+    O jogador deverá ter a opção de escolha do tamanho do tabuleiro em que a partida se desenrolará. Pelo menos duas opções deverão ser dadas: (i) um tabuleiro clássico, com 10 células de largura e 20 células de altura (igual ao da Figura 1); e (ii) um tabuleiro maior, de dimensões 22 x 44 células (largura x altura).
+    Seis peças diferentes, cujas estruturas são dadas na Figura 2, poderão surgir na tela (sempre uma por vez). A escolha da peça que surgirá deverá ser feita aleatoriamente pelo jogo, sendo que todas as seis peças deverão ter a mesma probabilidade de escolha.
+
+    O jogador controlará a movimentação das peças utilizando as quatro setas do teclado.
+    A pontuação deverá levar em conta um bônus, a ser aplicado sempre que o usuário eliminar mais de uma linha de uma única vez. Cada linha eliminada gerará uma soma de 10 pontos no placar total do usuário e o bônus corresponderá à multiplicação dos pontos gerados em uma eliminação pelo número de linhas eliminadas simultaneamente. Por exemplo, se o jogador eliminar 3 linhas simultaneamente, será adicionado ao seu placar (10 + 10 + 10) x 3 = 90 pontos. Lembre-se que o usuário poderá eliminar, no máximo, quatro linhas simultaneamente.
+    A velocidade com que cada peça sobe pelo tabuleiro deverá variar conforme o placar do jogador, para que a dificuldade aumente com o passar do tempo. Você deverá programar o jogo para que a velocidade de subida aumente sempre que o jogador atingir uma pontuação múltipla de 500 pontos. Caberá a você calibrar como esta velocidade mudará. Cuide para que o jogo não se torne muito difícil muito rapidamente nem seja muito lento para se tornar desafiador.
+    O jogador deverá visualizar na tela pelo menos as seguintes informações durante uma partida: tempo de partida até o momento, pontuação, número de linhas eliminadas e nível de dificuldade em que se encontra (associado à velocidade de queda das peças).
+    O jogo deverá exibir também, na tela, um ranking com os resultados de todas as partidas jogadas. As seguintes informações deverão ser armazenadas no ranking: nome do jogador, pontuação obtida, nível atingido e tempo de duração da partida. Este ranking deverá considerar apenas as partidas disputadas enquanto a página permanecer aberta.

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Final </title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script language='javascript' src='tetris.js'></script>
+</head>
+
+<body>
+
+    <div id="geral">
+        <div id="iniciar">
+            <h1>Escolha seu tamanho de jogo!</h1>
+            <div>
+                <select onchange="dimTabuleiro(this);">
+                    <option value="1">20x10</option>
+                    <option value="2" selected>44x22</option>
+                </select>
+                <button onclick="iniciojogo();"> Iniciar jogo</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="tabuleiro" class="grande">
+
+
+        <div id="control">
+            <button onclick="pausa();" id="pausa"> pause </button>
+        </div>
+
+        <div id="pontos">
+            <h2>Pontos</h2> <span>0</span>
+        </div>
+
+        <div id="aqui"></div>
+
+        <div id="tempo">
+            <h2>Tempo</h2><span>00:00</span>
+        </div>
+
+        <div id="qntLinhas">
+            <h2>Linhas</h2><span>0</span>
+        </div>
+
+        <div id="nivel">
+            <h2>Nível</h2><span>0</span>
+        </div>
+    </div>
+    <div id="rodape">
+        <p align="center">
+            <br>
+            Alice Mantovani, Viviane Bastos, Cleyvesson Silva, Jonathan Bozza, Gabriel Zotteli
+        </p>
+    </div>
+</body>
+
+</html>

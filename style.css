@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div #iniciar {
+    background-image: linear-gradient(to right, red, purple);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+#iniciar div {
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    margin: 60px auto 0;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+
+}
+
+#iniciar button {
+    display: block;
+    padding: 10px;
+    background: #0d0d0d;
+    margin-top: 100px;
+    color: #fff;
+    margin-left: 95px;
+    cursor: pointer;
+
+}
+
+#iniciar select {
+    margin-top: 90px;
+    margin-left: 105px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+div#tabuleiro {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 5px #999;
+    overflow: hidden;
+
+}
+
+.pequeno table tr td {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background: #eee;
+    color: #eee;
+}
+
+.grande table tr td {
+    width: 15px;
+    height: 13px;
+    text-align: center;
+    background: #eee;
+    color: #eee;
+    font-size: 5px;
+}
+
+div#control {
+    background: #fff;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 15px;
+    box-shadow: 0px 0px 5px #999;
+    padding: 10px;
+    margin-left: -150px;
+}
+
+#tabuleiro table tr td.blue {
+    background: #00BCD4;
+    color: #00BCD4;
+    box-shadow: inset 0px 0px 5px #999;
+
+}
+
+#tabuleiro table tr td.red {
+    background: #F44336;
+    color: #F44336;
+    box-shadow: inset 0px 0px 5px #999;
+    border-radius: 3px;
+}
+
+#tabuleiro table tr td.orange {
+    background: #FF9800;
+    color: #FF9800;
+    box-shadow: inset 0px 0px 5px #999;
+    border-radius: 3px;
+}
+
+#tabuleiro table tr td.green {
+    background: #8BC34A;
+    color: #8BC34A;
+    box-shadow: inset 0px 0px 5px #999;
+    border-radius: 3px;
+}
+
+#tabuleiro table tr td.purple {
+    background: #9C27B0;
+    color: #9C27B0;
+    box-shadow: inset 0px 0px 5px #999;
+    border-radius: 3px;
+}
+
+#tabuleiro table tr td.yellow {
+    background: #FFEB3B;
+    color: #FFEB3B;
+    box-shadow: inset 0px 0px 5px #999;
+    border-radius: 3px;
+}
+
+#tabuleiro table tr td.black {
+    background: #000000;
+    color: #000000;
+    box-shadow: inset 0px 0px 5px #999;
+    border-radius: 3px;
+}
+
+body {
+    background-image: linear-gradient(to right, red, purple);
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+table {
+    background: rgba(238, 238, 238, 0.43);
+}
+
+.pequeno #aqui {
+    margin-top: -120px;
+}
+
+.grande #aqui {
+    margin-top: -60px;
+}
+
+div#pontos {
+    top: 176px !important;
+}
+
+div#qntLinhas {
+    top: 350px !important;
+}
+
+div#nivel {
+    top: 440px !important;
+}
+
+div#tempo,
+div#pontos,
+div#qntLinhas,
+div#nivel {
+    position: absolute;
+    top: 260px;
+    margin-left: -147px;
+    border: 2px solid #ffffff;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    height: 20px;
+    background: rgba(0, 0, 0, .1);
+}
+
+div#pontos span,
+div#tempo span,
+div#qntLinhas span,
+div#nivel span {
+    color: #ffff;
+}
+
+#pontos h2,
+#tempo h2,
+#qntLinhas h2,
+#nivel h2 {
+    margin-top: -27px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.overflow {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.nome {
+    width: 300px;
+    background: #fff;
+    padding: 10px;
+    margin: 150px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #777;
+    text-align: center;
+}
+
+.nome h2 {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+button#btnNome,
+#btnPlayAgain {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 5px 20px;
+    background: #8BC34A;
+    border: 1px solid #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.nome input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#pausa {
+    border: none;
+    background: #fff;
+    display: block;
+    margin: 10px auto;
+    outline: none;
+    cursor: pointer;
+}
+
+#pausa img {
+    width: 80px;
+    cursor: pointer;
+}
+
+#geral h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 127px;
+}
